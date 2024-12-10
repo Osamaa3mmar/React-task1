@@ -5,7 +5,7 @@ export default function Code() {
         Age:25,
         Email:"osama@gmail.com",
         Phone:"01012345678",
-        Address:"cairo,Egypt"
+        Address:"Palstine"
     }
     const [Counter,setCounter]=useState(0);
     const [userAppear,setUser]=useState(0);
@@ -27,8 +27,8 @@ const changeAppear=()=>{
 }
 if(userAppear){
   return (
-    <div>
-        <div clssName="counter">
+    <div className="bg-primary p-5 rounded">
+        <div className="counter ">
       <h1>Counter :{Counter}</h1>
       <div className="btns">
         <button className="btn btn-dark" onClick={pluseCount}>+</button>
@@ -43,8 +43,8 @@ if(userAppear){
   )}
   else
   return (
-    <div>
-        <div clssName="counter">
+    <div className="bg-primary p-5 rounded">
+        <div className="counter ">
       <h1>Counter :{Counter}</h1>
       <div className="btns">
         <button className="btn btn-dark" onClick={pluseCount}>+</button>
